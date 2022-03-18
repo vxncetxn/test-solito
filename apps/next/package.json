@@ -12,7 +12,12 @@
     "@expo/next-adapter": "^3.1.20",
     "app": "*",
     "next": "12.1.0",
-    "raf": "^3.4.1"
+    "next-plugin-preact": "^3.0.6",
+    "preact": "^10.6.6",
+    "preact-render-to-string": "^5.1.20",
+    "raf": "^3.4.1",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat"
   },
   "devDependencies": {
     "@types/node": "17.0.21",

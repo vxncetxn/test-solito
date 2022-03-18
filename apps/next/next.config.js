@@ -4,6 +4,7 @@ const nextConfig = {
   webpack5: true,
 }
 
+const withPreact = require('next-plugin-preact')
 const { withExpo } = require('@expo/next-adapter')
 const withPlugins = require('next-compose-plugins')
 const withTM = require('next-transpile-modules')([
@@ -17,6 +18,6 @@ const withTM = require('next-transpile-modules')([
 ])
 
 module.exports = withPlugins(
-  [withTM, [withExpo, { projectRoot: __dirname }]],
+  [withTM, [withExpo, { projectRoot: __dirname }], withPreact],
   nextConfig
 )
