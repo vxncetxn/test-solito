@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "12.1.0",
     "@expo/next-adapter": "^3.1.20",
     "app": "*",
-    "next": "12.1.0",
     "raf": "^3.4.1"
   },
   "devDependencies": {
